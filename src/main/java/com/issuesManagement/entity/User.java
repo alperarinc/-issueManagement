@@ -34,6 +34,6 @@ public class User extends BaseEntity{
     private String email;
 
     @JoinColumn(name = "assignee_user_id")
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToMany(fetch = FetchType.LAZY)
     private List<Issue> issues;
 }
