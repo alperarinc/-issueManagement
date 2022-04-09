@@ -37,6 +37,9 @@ public class IssueHistory extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private IssueStatus issueStatus;
 
+    @Column(name = "details")
+    private String details;
+
     @JoinColumn(name = "assignee_user_id")
     @ManyToOne(optional = true, fetch = FetchType.LAZY)
     private User assignee;

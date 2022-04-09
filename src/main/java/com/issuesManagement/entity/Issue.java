@@ -35,11 +35,11 @@ public class Issue extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private IssueStatus issueStatus;
 
-    @Column(name = "assignee_user_id")
+    @JoinColumn(name = "assignee_user_id")
     @ManyToOne(optional = true,fetch = FetchType.LAZY)
     private User assignee;
 
-    @Column(name = "project_id")
+    @JoinColumn(name = "project_id")
     @ManyToOne(optional = true,fetch = FetchType.LAZY)
     private Project project;
 
