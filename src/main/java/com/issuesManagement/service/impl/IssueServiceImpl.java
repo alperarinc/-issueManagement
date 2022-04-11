@@ -2,7 +2,7 @@ package com.issuesManagement.service.impl;
 
 import com.issuesManagement.dto.IssueDto;
 import com.issuesManagement.entity.Issue;
-import com.issuesManagement.repositroy.IssueRepository;
+import com.issuesManagement.repository.IssueRepository;
 import com.issuesManagement.service.IssueService;
 import com.issuesManagement.util.TPage;
 import org.modelmapper.ModelMapper;

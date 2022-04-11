@@ -1,4 +1,4 @@
-package com.issuesManagement.repositroy;
+package com.issuesManagement.repository;
 
 import com.issuesManagement.entity.IssueHistory;
 import org.springframework.data.domain.Page;

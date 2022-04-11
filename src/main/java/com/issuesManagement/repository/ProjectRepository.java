@@ -1,4 +1,4 @@
-package com.issuesManagement.repositroy;
+package com.issuesManagement.repository;
 
 import com.issuesManagement.entity.Project;
 import org.springframework.data.domain.Page;

@@ -1,7 +1,7 @@
 package com.issuesManagement.service.impl;
 
 import com.issuesManagement.entity.User;
-import com.issuesManagement.repositroy.UserRepository;
+import com.issuesManagement.repository.UserRepository;
 import com.issuesManagement.service.UserService;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
