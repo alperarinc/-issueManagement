@@ -1,20 +1,20 @@
 package com.issuesManagement.service.impl;
 
 import com.issuesManagement.entity.Project;
-import com.issuesManagement.repositroy.ProjectRepositroy;
+import com.issuesManagement.repositroy.ProjectRepository;
 import com.issuesManagement.service.ProjectService;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
-import java.awt.print.Pageable;
+import org.springframework.data.domain.Pageable;
 import java.util.List;
 
 @Service
 public class ProjectServiceImpl implements ProjectService {
 
-    private final ProjectRepositroy projectRepositroy;
+    private final ProjectRepository projectRepository;
 
-    public ProjectServiceImpl(ProjectRepositroy projectRepositroy){
-        this.projectRepositroy = projectRepositroy;
+    public ProjectServiceImpl(ProjectRepository projectRepository){
+        this.projectRepository = projectRepository;
     }
 
     @Override
@@ -22,13 +22,13 @@ public class ProjectServiceImpl implements ProjectService {
         if (project.getProjectCode() == null){
             throw new IllegalArgumentException("Project code cannot be null");
         }
-        return projectRepositroy.save(project);
+        return projectRepository.save(project);
     }
 
     @Override
     public Project getById(Long id) {
 
-        return projectRepositroy.getOne(id);
+        return projectRepository.getOne(id);
     }
 
     @Override
@@ -44,7 +44,7 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public Page<Project> getAllPageable(Pageable pageable) {
 
-        return projectRepositroy.findAll(pageable);
+        return projectRepository.findAll(pageable);
     }
 
     @Override

@@ -3,7 +3,7 @@ package com.issuesManagement.service;
 import com.issuesManagement.entity.User;
 import org.springframework.data.domain.Page;
 
-import java.awt.print.Pageable;
+import org.springframework.data.domain.Pageable;
 
 
 public interface UserService {

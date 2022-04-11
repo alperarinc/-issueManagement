@@ -3,9 +3,10 @@ package com.issuesManagement.repositroy;
 import com.issuesManagement.entity.IssueHistory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.domain.Pageable;
 
-import java.awt.print.Pageable;
 
-public interface IssueHistroyRepositroy extends JpaRepository<IssueHistory, Long> {
-    Page<IssueHistory> findAll(Pageable pageable);
+
+public interface IssueHistroyRepository extends JpaRepository<IssueHistory, Long> {
+  Page<IssueHistory> findAll(Pageable pageable);
 }

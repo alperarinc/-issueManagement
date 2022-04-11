@@ -1,6 +1,5 @@
 package com.issuesManagement.repositroy;
 
-import com.issuesManagement.entity.Issue;
 import com.issuesManagement.entity.Project;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -10,7 +9,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 
-public interface ProjectRepositroy extends JpaRepository<Project, Long> {
+public interface ProjectRepository extends JpaRepository<Project, Long> {
 
     List<Project> getAllByProjectCode(String projectCode);
 
@@ -20,5 +19,5 @@ public interface ProjectRepositroy extends JpaRepository<Project, Long> {
 
     List<Project> findAll(Sort sort);
 
-    Page<Project> findAll(java.awt.print.Pageable pageable);
+
 }

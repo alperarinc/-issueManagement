@@ -2,7 +2,7 @@ package com.issuesManagement.entity;
 
 import lombok.*;
 import javax.persistence.*;
-import java.sql.Date;
+import java.util.Date;
 
 /**
  * Created arinc 08.04.2022.

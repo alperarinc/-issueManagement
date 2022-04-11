@@ -1,20 +1,20 @@
 package com.issuesManagement.service.impl;
 
 import com.issuesManagement.entity.User;
-import com.issuesManagement.repositroy.UserRepositroy;
+import com.issuesManagement.repositroy.UserRepository;
 import com.issuesManagement.service.UserService;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 
-import java.awt.print.Pageable;
+import org.springframework.data.domain.Pageable;
 
 @Service
 public class UserServiceImpl implements UserService {
 
-    public final UserRepositroy userRepositroy;
+    public final UserRepository userRepository;
 
-    public UserServiceImpl(UserRepositroy userRepositroy){
-        this.userRepositroy=userRepositroy;
+    public UserServiceImpl(UserRepository userRepository){
+        this.userRepository = userRepository;
     }
 
     @Override
@@ -22,21 +22,21 @@ public class UserServiceImpl implements UserService {
         if (user.getEmail() == null){
             throw new IllegalArgumentException("User email cannot be null");
         }
-        return userRepositroy.save(user);
+        return userRepository.save(user);
     }
 
     @Override
     public User getById(Long id) {
-        return userRepositroy.getOne(id);
+        return userRepository.getOne(id);
     }
 
     @Override
     public Page<User> getAllPageable(Pageable pageable) {
-        return userRepositroy.findAll(pageable);
+        return userRepository.findAll(pageable);
     }
 
     @Override
     public User getByUserName(String username) {
-        return userRepositroy.findByUserName(username);
+        return userRepository.findByUsername(username);
     }
 }
