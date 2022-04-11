@@ -1,16 +1,19 @@
 package com.issuesManagement.service;
 
-import com.issuesManagement.entity.Issue;
+import com.issuesManagement.entity.User;
+import org.springframework.data.domain.Page;
 
 import java.awt.print.Pageable;
-import java.util.List;
+
 
 public interface UserService {
 
-    UserService save(UserService userService);
+    User save(User user);
 
-    Issue getById(Long id);
+    User getById(Long id);
 
-    List<Issue> getAllPageable(Pageable pageable);
+    Page<User> getAllPageable(Pageable pageable);
+
+    User getByUserName(String username);
 
 }

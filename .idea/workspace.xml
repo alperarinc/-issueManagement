@@ -5,24 +5,48 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6023bc58-c272-4b8b-aea7-6b356d4f489b" name="Changes" comment="Spring Boot Entity">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueHistoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/ProjectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/IssueDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/ProjectDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_1_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_21_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_0_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_6_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_8_4.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/Issue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/Issue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/IssueHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/IssueHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/IssueStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/IssueStatus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repo/IssueHistroyRepositroy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/IssueHistroyRepositroy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repo/IssueRepositroy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/IssueRepositroy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repo/ProjectRepositroy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/ProjectRepositroy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repo/UserRepositroy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/UserRepositroy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/Issue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/Issue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/IssueStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/IssueStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/issuesManagement/IssuesManagementApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/issuesManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/issuesManagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/IssuesManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/IssuesManagementApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/IssueHistroyRepositroy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/IssueHistroyRepositroy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/ProjectRepositroy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/ProjectRepositroy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/UserRepositroy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repositroy/UserRepositroy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/ProjectService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +110,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../veterinaryApp/pom.xml" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -106,6 +133,9 @@
     </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6023bc58-c272-4b8b-aea7-6b356d4f489b" name="Changes" comment="" />
@@ -116,6 +146,10 @@
       <workItem from="1649444303804" duration="641000" />
       <workItem from="1649445007745" duration="3734000" />
       <workItem from="1649528943465" duration="3741000" />
+      <workItem from="1649535086910" duration="297000" />
+      <workItem from="1649569787680" duration="213000" />
+      <workItem from="1649582190081" duration="6083000" />
+      <workItem from="1649610003345" duration="1254000" />
     </task>
     <servers />
   </component>

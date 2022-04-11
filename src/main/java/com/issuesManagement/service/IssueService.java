@@ -1,18 +1,17 @@
 package com.issuesManagement.service;
-
-import com.issuesManagement.entity.Issue;
+import com.issuesManagement.dto.IssueDto;
+import org.springframework.data.domain.Page;
 
 import java.awt.print.Pageable;
-import java.util.List;
+
 
 public interface IssueService {
 
-    Issue save(Issue issue);
+    IssueDto save(IssueDto issue);
 
-    Issue getById(Long id);
+    IssueDto getById(Long id);
 
-    List<Issue> getAllPageable(Pageable pageable);
+    Page<IssueDto> getAllPageable(Pageable pageable);
 
-
-
+    Boolean delete(IssueDto issue);
 }
