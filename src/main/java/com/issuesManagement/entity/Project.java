@@ -22,7 +22,7 @@ public class Project {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name="project_code",unique = true)
+    @Column(name="project_code")
     private String projectCode;
 
     @Column(name="project_name",length = 100)

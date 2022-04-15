@@ -17,11 +17,11 @@ import java.util.Arrays;
 public class  IssueServiceImpl implements IssueService {
 
     private final IssueRepository issueRepository;
-    private final ModelMapper modelMapper;
+    private final ModelMapper modelMapper ;
 
-    public IssueServiceImpl(IssueRepository issueRepository){
+    public IssueServiceImpl(IssueRepository issueRepository,ModelMapper modelMapper){
         this.issueRepository = issueRepository;
-        this.modelMapper= new ModelMapper();
+        this.modelMapper= modelMapper;
     }
 
 
