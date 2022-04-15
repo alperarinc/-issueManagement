@@ -22,7 +22,8 @@ public class UserServiceImpl implements UserService {
         if (user.getEmail() == null){
             throw new IllegalArgumentException("User email cannot be null");
         }
-        return userRepository.save(user);
+        user = userRepository.save(user);
+        return user;
     }
 
     @Override

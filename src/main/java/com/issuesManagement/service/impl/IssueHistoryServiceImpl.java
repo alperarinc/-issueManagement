@@ -4,6 +4,7 @@ package com.issuesManagement.service.impl;
 import com.issuesManagement.entity.IssueHistory;
 import com.issuesManagement.repository.IssueHistroyRepository;
 import com.issuesManagement.service.IssueHistoryService;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Pageable;
@@ -15,18 +16,16 @@ public class IssueHistoryServiceImpl implements IssueHistoryService {
 
     public final IssueHistroyRepository issueHistroyRepository;
 
-    public IssueHistoryServiceImpl(IssueHistroyRepository issueHistroyRepository){
+    public IssueHistoryServiceImpl(IssueHistroyRepository issueHistroyRepository) {
         this.issueHistroyRepository = issueHistroyRepository;
     }
 
     @Override
-    public IssueHistory save(IssueHistory issueHistory){
-
-        //Bussinesss Logic
+    public IssueHistory save(@NotNull IssueHistory issueHistory) {
         if (issueHistory.getIssue() == null) {
             throw new IllegalArgumentException("Issue cannot be null");
         }
-        issueHistory= issueHistroyRepository.save(issueHistory);
+        issueHistory = issueHistroyRepository.save(issueHistory);
         return issueHistory;
     }
 
@@ -37,7 +36,8 @@ public class IssueHistoryServiceImpl implements IssueHistoryService {
 
     @Override
     public Page<IssueHistory> getAllPageable(Pageable pageable) {
-        return issueHistroyRepository.findAll(pageable);     }
+        return issueHistroyRepository.findAll(pageable);
+    }
 
 
     @Override
