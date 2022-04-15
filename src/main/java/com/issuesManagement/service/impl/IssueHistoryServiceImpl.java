@@ -4,7 +4,6 @@ package com.issuesManagement.service.impl;
 import com.issuesManagement.entity.IssueHistory;
 import com.issuesManagement.repository.IssueHistroyRepository;
 import com.issuesManagement.service.IssueHistoryService;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Pageable;
@@ -21,7 +20,7 @@ public class IssueHistoryServiceImpl implements IssueHistoryService {
     }
 
     @Override
-    public IssueHistory save(@NotNull IssueHistory issueHistory) {
+    public IssueHistory save(IssueHistory issueHistory) {
         if (issueHistory.getIssue() == null) {
             throw new IllegalArgumentException("Issue cannot be null");
         }
