@@ -33,8 +33,8 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public ProjectDto getById(Long id) {
 
-        Project p = projectRepository.getById(id);
-        return modelMapper.map(p,ProjectDto.class);
+        Project project = projectRepository.getById(id);
+        return modelMapper.map(project,ProjectDto.class);
     }
 
     @Override

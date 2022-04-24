@@ -1,13 +1,10 @@
 package com.issuesManagement.service.impl;
-
-
 import com.issuesManagement.entity.IssueHistory;
 import com.issuesManagement.repository.IssueHistroyRepository;
 import com.issuesManagement.service.IssueHistoryService;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Pageable;
-
 
 @Service
 public class IssueHistoryServiceImpl implements IssueHistoryService {

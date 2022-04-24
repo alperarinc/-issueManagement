@@ -19,5 +19,7 @@ public interface ProjectRepository extends JpaRepository<Project, Long> {
 
     List<Project> findAll(Sort sort);
 
+    Project getById(Long id);
+
 
 }
