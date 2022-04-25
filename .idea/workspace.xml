@@ -5,43 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6023bc58-c272-4b8b-aea7-6b356d4f489b" name="Changes" comment="Bug Fixed">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/IssueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/issuesManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/issuesManagement.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/ProjectDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/ProjectDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueHistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueHistoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/ProjectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/ProjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/IssuesManagementApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/IssuesManagementApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/IssueDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/IssueDto.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/ProjectDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/ProjectDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/UserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/BaseEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/BaseEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/Issue.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/Issue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/IssueHistory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/IssueHistory.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/IssueStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/IssueStatus.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/IssueHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/IssueHistoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/IssueService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/IssueService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/ProjectService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/ProjectService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueHistoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueHistoryServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/ProjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/ProjectServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/util/TPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/util/TPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/issuesManagement/IssuesManagementApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/issuesManagement/IssuesManagementApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -167,6 +152,13 @@
       <workItem from="1650054592155" duration="1245000" />
       <workItem from="1650055915505" duration="325000" />
       <workItem from="1650789843845" duration="9996000" />
+      <workItem from="1650829577500" duration="87000" />
+      <workItem from="1650830099093" duration="4000" />
+      <workItem from="1650912040409" duration="312000" />
+      <workItem from="1650912367736" duration="1066000" />
+      <workItem from="1650913459781" duration="1421000" />
+      <workItem from="1650916760585" duration="2819000" />
+      <workItem from="1650919614285" duration="353000" />
     </task>
     <task id="LOCAL-00001" summary="Bug Fixed">
       <created>1650047937735</created>

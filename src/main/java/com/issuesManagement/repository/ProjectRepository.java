@@ -11,7 +11,7 @@ import java.util.List;
 
 public interface ProjectRepository extends JpaRepository<Project, Long> {
 
-    List<Project> getAllByProjectCode(String projectCode);
+    Project getAllByProjectCode(String projectCode);
 
     List<Project> getAllByProjectCodeContains(String projectCode);
 

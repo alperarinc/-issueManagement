@@ -23,11 +23,18 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public Project save(Project project) {
-        if (project.getProjectCode() == null){
-            throw new IllegalArgumentException("Project code cannot be null");
-        }
-        return projectRepository.save(project);
+    public ProjectDto save(ProjectDto project) {
+
+        Project projectCheck = projectRepository.getAllByProjectCode(project.getProjectCode());
+
+        if (projectCheck != null )
+            throw  new IllegalArgumentException("project Code Already Exist");
+
+
+        Project p = modelMapper.map(project,Project.class);
+        p=projectRepository.save(p);
+        project.setId(p.getId());
+        return project;
     }
 
     @Override
@@ -38,7 +45,7 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public List<Project> getByProjectCode(String projectCode) {
+    public ProjectDto getByProjectCode(String projectCode) {
         return null;
     }
 
