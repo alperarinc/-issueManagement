@@ -49,11 +49,14 @@ public class  IssueServiceImpl implements IssueService {
         page.setStat(data, Arrays.asList(dtos));
         return page;
     }
-
-
+    @Override
+    public Boolean delete(Long issueId) {
+        issueRepository.deleteById(issueId);
+        return true;
+    }
 
     @Override
-    public Boolean delete(IssueDto issue) {
+    public IssueDto update(Long id, IssueDto issue) {
         return null;
     }
 }
