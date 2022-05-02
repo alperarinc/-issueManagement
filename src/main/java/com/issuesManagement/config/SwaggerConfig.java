@@ -1,4 +1,4 @@
-package com.issuesManagement.Config;
+package com.issuesManagement.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,10 +17,12 @@ import java.time.LocalDate;
 @EnableSwagger2
 public class SwaggerConfig {
 
+
     ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("Issue Management API Reference")
                 .version("1.0.0")
+                .description("ALPs Developers")
                 .build();
     }
 
@@ -35,7 +37,6 @@ public class SwaggerConfig {
                 .useDefaultResponseMessages(false)
                 .directModelSubstitute(LocalDate.class, String.class)
                 .genericModelSubstitutes(ResponseEntity.class);
-
 
     }
 }
