@@ -5,11 +5,13 @@ import com.issuesManagement.dto.ProjectDto;
 import com.issuesManagement.entity.Project;
 import com.issuesManagement.repository.ProjectRepository;
 import com.issuesManagement.service.ProjectService;
+import com.issuesManagement.util.TPage;
 import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -28,7 +30,8 @@ public class ProjectServiceImpl implements ProjectService {
 
         Project projectCheck = projectRepository.getAllByProjectCode(project.getProjectCode());
 
-        if (projectCheck != null) throw new IllegalArgumentException("project Code Already Exist");
+        if (projectCheck != null)
+            throw new IllegalArgumentException("Project Code Already Exist");
 
 
         Project p = modelMapper.map(project, Project.class);
@@ -55,9 +58,11 @@ public class ProjectServiceImpl implements ProjectService {
     }
 
     @Override
-    public Page<Project> getAllPageable(Pageable pageable) {
-
-        return projectRepository.findAll(pageable);
+    public TPage<ProjectDto> getAllPageable(Pageable pageable) {
+        Page<Project> data = projectRepository.findAll(pageable);
+        TPage<ProjectDto> respnose = new TPage<>();
+        respnose.setStat(data, Arrays.asList(modelMapper.map(data.getContent(), ProjectDto[].class)));
+        return respnose;
     }
 
     @Override
