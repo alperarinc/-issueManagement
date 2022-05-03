@@ -5,18 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6023bc58-c272-4b8b-aea7-6b356d4f489b" name="Changes" comment="Bug Fixed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectVersionedApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/advice/ExceptionResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/advice/ExceptionResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/advice/IMExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/advice/IMExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/IssuesManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/IssuesManagementApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/ProjectService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/ProjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/ProjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/ProjectServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issuesManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/issuesManagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/util/TPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/util/TPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/util/TPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/util/TPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +61,7 @@
     </option>
   </component>
   <component name="ProjectId" id="27WmcqxZEl5sXScwSxFYecugN9n" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -87,6 +80,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -176,6 +170,10 @@
       <workItem from="1651446448402" duration="2770000" />
       <workItem from="1651450692707" duration="2974000" />
       <workItem from="1651481136714" duration="6603000" />
+      <workItem from="1651584725945" duration="1496000" />
+      <workItem from="1651588615979" duration="1554000" />
+      <workItem from="1651590363027" duration="34000" />
+      <workItem from="1651590404188" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="Bug Fixed">
       <created>1650047937735</created>
