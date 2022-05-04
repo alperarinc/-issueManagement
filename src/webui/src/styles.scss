@@ -1,5 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~material-design-icons-iconfont/dist/material-design-icons.css";
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/bootstrap.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
 
 body {
   margin: 0;
@@ -17,6 +20,8 @@ body {
   font-weight: 400;
 }
 
+
+
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -29,11 +34,12 @@ body {
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  -webkit-font-feature-settings: 'liga';
+ // -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
 }
 
 $loader-img: url(/assets/images/loading.gif);
+
 .loading-indicator-block {
   position: absolute;
   width: 100%;
@@ -43,20 +49,20 @@ $loader-img: url(/assets/images/loading.gif);
   opacity: 0.7;
   background: $loader-img no-repeat center center;
   z-index: 100;
+
   .backdrop {
     background: none !important;
     border-radius: 0px !important;
     margin-bottom: 10px;
   }
+
   .spinner-three-bounce {
     display: none;
   }
 }
 
-$theme-colors: (
-  "primary": #4B89FC,
-  "secondary": #6c757d
-);
+$theme-colors: ("primary": #4B89FC,
+  "secondary": #6c757d);
 
 @media screen and (max-width: 992px) {
   .push-right {

@@ -4,7 +4,73 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6023bc58-c272-4b8b-aea7-6b356d4f489b" name="Changes" comment="Bug Fixed" />
+    <list default="true" id="6023bc58-c272-4b8b-aea7-6b356d4f489b" name="Changes" comment="Bug Fixed">
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/footer/footer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/footer/footer.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/footer/footer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/header/header.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/sidebar/sidebar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/sidebar/sidebar.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/sidebar/sidebar.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/common/page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/common/project.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue.routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/project/project.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/project/project.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/project/project.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/project/project.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/project/project.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/project/project.routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/api.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/api.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/shared/issue.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/shared/project.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issuesManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/issuesManagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/IssueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/IssueController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectVersionedApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectVersionedApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/e2e/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/e2e/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/e2e/src/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/e2e/src/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/e2e/src/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/e2e/src/app.po.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/e2e/tsconfig.e2e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/webui/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/tslint.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +145,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="ts.external.directory.path" value="D:\gitup-dev\ıssueManagement\src\webui\issue-management\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\gitup-dev\ıssueManagement\src\webui\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -112,7 +178,8 @@
     <configuration name="IssuesManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="issuesManagement" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.issuesManagement.IssuesManagementApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,6 +245,12 @@
       <workItem from="1651590531594" duration="5287000" />
       <workItem from="1651605132248" duration="1033000" />
       <workItem from="1651653945771" duration="20000" />
+      <workItem from="1651667551575" duration="981000" />
+      <workItem from="1651689328299" duration="995000" />
+      <workItem from="1651691303774" duration="87000" />
+      <workItem from="1651692320460" duration="1443000" />
+      <workItem from="1651693934845" duration="654000" />
+      <workItem from="1651695097686" duration="1243000" />
     </task>
     <task id="LOCAL-00001" summary="Bug Fixed">
       <created>1650047937735</created>
