@@ -1,7 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { Page } from 'src/app/common/page';
-import { Project } from 'src/app/common/project.model';
-import { ProjectService } from 'src/app/services/shared/project.service';
+import {Component, OnInit, TemplateRef} from '@angular/core';
+import {Page} from 'src/app/common/page';
+import {Project} from 'src/app/common/project.model';
+import {ProjectService} from 'src/app/services/shared/project.service';
+import {BsModalRef, BsModalService} from "ngx-bootstrap";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import {ConfirmationComponent} from "../../shared/confirmation/confirmation.component";
 
 
 @Component({
@@ -10,34 +13,80 @@ import { ProjectService } from 'src/app/services/shared/project.service';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent implements OnInit {
-
-
+  modalRef: BsModalRef;
+  projectFrom: FormGroup
   page = new Page();
-    cols=[
-      {prop:'id',name:'No'},
-      {prop:'projectName',name:'Project Name'},
-      {prop:'projectCode',name:'Project Code'}
-    ]
+  cols = [
+    {prop: 'id', name: 'No'},
+    {prop: 'projectName', name: 'Project Name'},
+    {prop: 'projectCode', name: 'Project Code'}
+  ]
 
 
   rows = [];
 
-  constructor(private projectService: ProjectService) { }
 
-  ngOnInit(): void {
-    this.setPage({ offset: 0 });
+  constructor(private projectService: ProjectService, private modalService: BsModalService, private formBuilder: FormBuilder) {
   }
 
-  setPage(pageInfo){
-    this.page.number=pageInfo.offset;
+  ngOnInit(): void {
+    this.setPage({offset: 0});
+    this.projectFrom = this.formBuilder.group({
+      'projectCode': [null, [Validators.required, Validators.minLength(2), Validators.maxLength(10)]],
+      'projectName': [null, [Validators.required, Validators.minLength(4)]],
+    });
+  }
+
+  get f() {
+    return this.projectFrom.controls
+  }
+
+  saveProject() {
+    if (!this.projectFrom.valid)
+      return;
+
+    this.projectService.CreateProject(this.projectFrom.value).subscribe(
+      response => {
+        console.log(response)
+      }
+    )
+    this.setPage(this.page);
+    this.closeAndResetModal();
+  }
+
+  closeAndResetModal() {
+    this.projectFrom.reset();
+    this.modalRef.hide();
+  }
+
+  openModal(template: TemplateRef<any>) {
+    this.modalRef = this.modalService.show(template);
+  }
+
+  setPage(pageInfo) {
+    this.page.page = pageInfo.offset;
     this.projectService.getAll(this.page).subscribe(pagedData => {
-      this.page.size=pagedData.size;
-      this.page.number=pagedData.number;
-      this.page.totalElements=pagedData.totalElements;
-      this.rows=pagedData.content;
+      this.page.size = pagedData.size;
+      this.page.page = pagedData.number;
+      this.page.totalElements = pagedData.totalElements;
+      this.rows = pagedData.content;
 
 
     });
   }
 
+  showDeleteConfirmation(){
+    const modal = this.modalService.show(ConfirmationComponent);
+  (<ConfirmationComponent>modal.content).showConfirmation(
+    'Test Header',
+    'Test Body'
+  );
+  (<ConfirmationComponent>modal.content).onClose.subscribe(result=>{
+    if(result===true){
+      console.log('Yes')
+    }else if(result===false){
+      console.log('No')
+    }
+  })
+}
 }

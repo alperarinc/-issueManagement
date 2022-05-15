@@ -42,12 +42,17 @@
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/api.service.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/shared/issue.service.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/shared/project.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/shared/confirmation/confirmation.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/shared/confirmation/confirmation.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/shared/confirmation/confirmation.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/shared/confirmation/confirmation.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/shared/shared.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/assets/i18n/de.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/assets/i18n/en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/assets/i18n/tr.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/issuesManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/issuesManagement.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/IssueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/IssueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectVersionedApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectVersionedApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/IssuesManagementApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/IssuesManagementApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/angular.json" afterDir="false" />
@@ -66,10 +71,7 @@
       <change beforePath="$PROJECT_DIR$/src/webui/src/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/IssuesManagementApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/IssuesManagementApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +91,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/webui" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -103,7 +106,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
   </component>
@@ -144,7 +147,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="D:\gitup-dev\ıssueManagement\src\webui\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -161,6 +164,7 @@
       <recent name="D:\gitup-dev\ıssueManagement" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\gitup-dev\ıssueManagement\src\webui\src\app" />
       <recent name="D:\gitup-dev\ıssueManagement\src\webui\issue-management\src\app\pages\issue" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -251,6 +255,7 @@
       <workItem from="1651692320460" duration="1443000" />
       <workItem from="1651693934845" duration="654000" />
       <workItem from="1651695097686" duration="1243000" />
+      <workItem from="1652645356113" duration="889000" />
     </task>
     <task id="LOCAL-00001" summary="Bug Fixed">
       <created>1650047937735</created>
