@@ -11,6 +11,10 @@ import {ToastNoAnimation, ToastNoAnimationModule, ToastrModule} from "ngx-toastr
 import { ApiService } from "./services/api.service";
 import {HttpClientModule} from "@angular/common/http";
 import { NgxDatatableModule } from "@swimlane/ngx-datatable";
+import {IssueService} from "./services/shared/issue.service";
+import {ProjectService} from "./services/shared/project.service";
+import {UserService} from "./services/shared/user.service";
+import {IssueHistoryService} from "./services/shared/issue.history.service";
 
 
 @NgModule({
@@ -38,7 +42,7 @@ import { NgxDatatableModule } from "@swimlane/ngx-datatable";
       autoDismiss: true
     }),
   ],
-  providers: [ApiService],
+  providers: [ApiService,UserService,IssueService,ProjectService,IssueHistoryService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -23,5 +23,23 @@
     "_class": "com.issuesManagement.entity.Project",
     "projectCode" : "ERP-B",
     "projectName": "ERP Project for Bussiness"
+  },
+  {
+    "_class": "com.issuesManagement.entity.User",
+    "username" : "NARINC",
+    "nameSurname": "Nihal Arinç",
+    "email":"alperarinc@ıssue.com"
+  },
+  {
+    "_class": "com.issuesManagement.entity.User",
+    "username" : "HARINC",
+    "nameSurname": "Hakan Arinç",
+    "email":"alperarinc@ıssue.com"
+  },
+  {
+    "_class": "com.issuesManagement.entity.User",
+    "username" : "CARINC",
+    "nameSurname": "Cafer Arinç",
+    "email":"alperarinc@ıssue.com"
   }
 ]

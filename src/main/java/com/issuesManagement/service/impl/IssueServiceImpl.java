@@ -14,26 +14,25 @@ import java.util.Arrays;
 
 
 @Service
-public class  IssueServiceImpl implements IssueService {
+public class IssueServiceImpl implements IssueService {
 
     private final IssueRepository issueRepository;
-    private final ModelMapper modelMapper ;
+    private final ModelMapper modelMapper;
 
-    public IssueServiceImpl(IssueRepository issueRepository,ModelMapper modelMapper){
+    public IssueServiceImpl(IssueRepository issueRepository, ModelMapper modelMapper) {
         this.issueRepository = issueRepository;
-        this.modelMapper= modelMapper;
+        this.modelMapper = modelMapper;
     }
 
 
     @Override
     public IssueDto save(IssueDto issue) {
 
-        if (issue.getDate()==null)
-            throw new IllegalArgumentException("Issue Date cannot be null");
+        if (issue.getDate() == null) throw new IllegalArgumentException("Issue Date cannot be null");
         Issue issuedb = modelMapper.map(issue, Issue.class);
 
         issuedb = issueRepository.save(issuedb);
-        return modelMapper.map(issuedb,IssueDto.class);
+        return modelMapper.map(issuedb, IssueDto.class);
     }
 
     @Override
@@ -45,11 +44,12 @@ public class  IssueServiceImpl implements IssueService {
     @Override
     public TPage<IssueDto> getAllPageable(Pageable pageable) {
         Page<Issue> data = issueRepository.findAll((Pageable) pageable);
-        TPage page=new TPage<IssueDto>();
-        IssueDto[] dtos = modelMapper.map(data.getContent(),IssueDto[].class);
+        TPage page = new TPage<IssueDto>();
+        IssueDto[] dtos = modelMapper.map(data.getContent(), IssueDto[].class);
         page.setStat(data, Arrays.asList(dtos));
         return page;
     }
+
     @Override
     public Boolean delete(Long issueId) {
         issueRepository.deleteById(issueId);
