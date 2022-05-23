@@ -3,7 +3,9 @@ import { Observable } from "rxjs";
 import { map } from "rxjs/operators";
 import { ApiService } from "../api.service";
 
-@Injectable()
+@Injectable({
+  providedIn:'root'
+})
 export class IssueService {
     private ISSUE_PATH = "/issue";
 
@@ -11,8 +13,8 @@ export class IssueService {
 
     }
 
-    getAll(): Observable<any> {
-        return this.apiService.get( this.ISSUE_PATH).pipe(map(
+    getAll(page): Observable<any> {
+        return this.apiService.get( this.ISSUE_PATH+'/pagination',page).pipe(map(
             res => {
                 if (res) {
                     return res
@@ -39,7 +41,7 @@ export class IssueService {
         ));
     }
 
-    CreateIssue(issue): Observable<any> {
+  createIssue(issue): Observable<any> {
         return this.apiService.post( this.ISSUE_PATH,issue).pipe(map(
             res => {
                 if (res) {

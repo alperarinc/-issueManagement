@@ -11,10 +11,6 @@ import java.util.List;
 
 public interface ProjectRepository extends JpaRepository<Project, Long> {
 
-    Project getAllByProjectCode(String projectCode);
-
-    List<Project> getAllByProjectCodeContains(String projectCode);
-
     Page<Project> findAll(Pageable pageable);
 
     List<Project> findAll(Sort sort);
@@ -23,5 +19,5 @@ public interface ProjectRepository extends JpaRepository<Project, Long> {
 
     Project getByProjectCodeAndIdNot(String ProjectCode, Long id);
 
-
+    Project getByProjectCode(String projectCode);
 }

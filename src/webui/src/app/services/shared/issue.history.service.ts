@@ -39,7 +39,7 @@ export class IssueHistoryService {
         ));
     }
 
-    CreateIssue(issueHistory): Observable<any> {
+    CreateIssueHistory(issueHistory): Observable<any> {
         return this.apiService.post( this.ISSUE_HISTORY_PATH,issueHistory).pipe(map(
             res => {
                 if (res) {

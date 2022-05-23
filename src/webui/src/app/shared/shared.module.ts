@@ -4,6 +4,7 @@ import {BsModalRef, ModalModule} from "ngx-bootstrap";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import {CommonModule} from "@angular/common";
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   exports:[
@@ -19,7 +20,8 @@ import {CommonModule} from "@angular/common";
     ConfirmationComponent
   ],
   declarations: [
-    ConfirmationComponent
+    ConfirmationComponent,
+
   ],
   imports:[
     ModalModule.forRoot(),

@@ -2,14 +2,19 @@ package com.issuesManagement.api;
 
 
 import com.issuesManagement.dto.IssueDto;
+import com.issuesManagement.entity.IssueStatus;
 import com.issuesManagement.service.impl.IssueServiceImpl;
 import com.issuesManagement.util.ApiPaths;
+import com.issuesManagement.util.TPage;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Arrays;
+import java.util.List;
 
 @CrossOrigin
 @RestController
@@ -32,6 +37,12 @@ public class IssueController {
         IssueDto issueDto = issueServiceImpl.getById(id);
         return ResponseEntity.ok(issueDto);
     }
+    @GetMapping("/pagination")
+    @ApiOperation(value = "Get By Id Operation",response = IssueDto.class)
+    public ResponseEntity<TPage<IssueDto>> getAllByPagination(Pageable pageable) {
+        TPage<IssueDto> data  = issueServiceImpl.getAllPageable(pageable);
+        return ResponseEntity.ok(data);
+    }
 
     @PostMapping()
     @ApiOperation(value = "Create Operation",response = IssueDto.class)
@@ -50,6 +61,11 @@ public class IssueController {
     public ResponseEntity<Boolean> delete(@PathVariable(value = "id", required = true) Long id) {
         return ResponseEntity.ok(issueServiceImpl.delete(id));
 
+    }
+    @GetMapping("/statuses")
+    @ApiOperation(value = "Get All Issue Statuses Operation", response = String.class, responseContainer = "List")
+    public ResponseEntity<List<IssueStatus>> getAll() {
+        return ResponseEntity.ok(Arrays.asList(IssueStatus.values()));
     }
 
 }

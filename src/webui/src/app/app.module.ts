@@ -15,6 +15,7 @@ import {IssueService} from "./services/shared/issue.service";
 import {ProjectService} from "./services/shared/project.service";
 import {UserService} from "./services/shared/user.service";
 import {IssueHistoryService} from "./services/shared/issue.history.service";
+import {NotFoundComponent} from "./shared/not-found/not-found.component";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {IssueHistoryService} from "./services/shared/issue.history.service";
     AppLayoutComponent,
     FooterComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
