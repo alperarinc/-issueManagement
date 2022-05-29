@@ -16,6 +16,7 @@ import {ProjectService} from "./services/shared/project.service";
 import {UserService} from "./services/shared/user.service";
 import {IssueHistoryService} from "./services/shared/issue.history.service";
 import {NotFoundComponent} from "./shared/not-found/not-found.component";
+import {IssueDetailComponent} from "./pages/issue/issue-detail/issue-detail.component";
 
 
 @NgModule({
@@ -25,7 +26,7 @@ import {NotFoundComponent} from "./shared/not-found/not-found.component";
     FooterComponent,
     HeaderComponent,
     SidebarComponent,
-    NotFoundComponent
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -44,7 +45,7 @@ import {NotFoundComponent} from "./shared/not-found/not-found.component";
       autoDismiss: true
     }),
   ],
-  providers: [ApiService,UserService,IssueService,ProjectService,IssueHistoryService],
+  providers: [ApiService,UserService,IssueService,ProjectService,IssueHistoryService,IssueDetailComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

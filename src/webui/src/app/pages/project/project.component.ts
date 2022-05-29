@@ -63,7 +63,7 @@ export class ProjectComponent implements OnInit {
     if (!this.projectFrom.valid)
       return;
 
-    this.projectService.CreateProject(this.projectFrom.value).subscribe(
+    this.projectService.createProject(this.projectFrom.value).subscribe(
       response => {
         this.setPage(this.page);
         this.closeAndResetModal();

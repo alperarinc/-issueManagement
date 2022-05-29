@@ -7,7 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.sql.Date;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -28,4 +28,8 @@ public class IssueDto {
     private UserDto assignee;
     @ApiModelProperty(required = true,value = "ProjectDto Of Project")
     private ProjectDto project;
+    private Long projectId;
+
+    public void setDate(java.util.Date date) {
+    }
 }

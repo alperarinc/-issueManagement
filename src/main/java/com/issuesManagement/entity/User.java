@@ -9,7 +9,7 @@ import java.util.*;
  * Created arinc 08.04.2022.
  */
 @Entity
-@Table(name = "users")
+@Table(name = "users", indexes = {@Index(name = "idx_username",columnList = "uname")})
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

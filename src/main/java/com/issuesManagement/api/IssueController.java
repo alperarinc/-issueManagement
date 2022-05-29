@@ -1,7 +1,9 @@
 package com.issuesManagement.api;
 
 
+import com.issuesManagement.dto.IssueDetailDto;
 import com.issuesManagement.dto.IssueDto;
+import com.issuesManagement.dto.IssueUpdateDto;
 import com.issuesManagement.entity.IssueStatus;
 import com.issuesManagement.service.impl.IssueServiceImpl;
 import com.issuesManagement.util.ApiPaths;
@@ -19,12 +21,12 @@ import java.util.List;
 @CrossOrigin
 @RestController
 @RequestMapping(ApiPaths.IssueCtrl.CTRL)
-@Api(value = ApiPaths.IssueCtrl.CTRL,description = "Issue APIs")
+@Api(value = ApiPaths.IssueCtrl.CTRL, description = "Issue APIs")
 public class IssueController {
 
     private final IssueServiceImpl issueServiceImpl;
 
-    public IssueController( IssueServiceImpl issueServiceImpl) {
+    public IssueController(IssueServiceImpl issueServiceImpl) {
         this.issueServiceImpl = issueServiceImpl;
 
     }
@@ -32,36 +34,45 @@ public class IssueController {
     //insert into project(id,project_name,project_code) values (60,'Test','T6060')
     //insert into issue(id,description,date) values (9999,'test',now())
     @GetMapping("/{id}")
-    @ApiOperation(value = "Get By Id Operation",response = IssueDto.class)
+    @ApiOperation(value = "Get By Id Operation", response = IssueDto.class)
     public ResponseEntity<IssueDto> getById(@PathVariable(value = "id", required = true) Long id) {
         IssueDto issueDto = issueServiceImpl.getById(id);
         return ResponseEntity.ok(issueDto);
     }
+
+    @GetMapping("/detail/{id}")
+    @ApiOperation(value = "Get By Id Operation", response = IssueDetailDto.class)
+    public ResponseEntity<IssueDetailDto> getByIdWithDetails(@PathVariable(value = "id", required = true) Long id) {
+        IssueDetailDto issueDetailDto = issueServiceImpl.getByIdWithDetails(id);
+        return ResponseEntity.ok(issueDetailDto);
+    }
+
     @GetMapping("/pagination")
-    @ApiOperation(value = "Get By Id Operation",response = IssueDto.class)
+    @ApiOperation(value = "Get By Id Operation", response = IssueDto.class)
     public ResponseEntity<TPage<IssueDto>> getAllByPagination(Pageable pageable) {
-        TPage<IssueDto> data  = issueServiceImpl.getAllPageable(pageable);
+        TPage<IssueDto> data = issueServiceImpl.getAllPageable(pageable);
         return ResponseEntity.ok(data);
     }
 
     @PostMapping()
-    @ApiOperation(value = "Create Operation",response = IssueDto.class)
+    @ApiOperation(value = "Create Operation", response = IssueDto.class)
     public ResponseEntity<IssueDto> createProject(@Valid @RequestBody IssueDto issue) {
         return ResponseEntity.ok(issueServiceImpl.save(issue));
     }
 
     @PutMapping("/{id}")
-    @ApiOperation(value = "Update Operation",response = IssueDto.class)
-    public ResponseEntity<IssueDto> updateProject(@PathVariable(value = "id", required = true) Long id, @Valid @RequestBody IssueDto issue) {
+    @ApiOperation(value = "Update Operation", response = IssueDto.class)
+    public ResponseEntity<IssueDetailDto> updateProject(@PathVariable(value = "id", required = true) Long id, @Valid @RequestBody IssueUpdateDto issue) {
         return ResponseEntity.ok(issueServiceImpl.update(id, issue));
     }
 
     @DeleteMapping("/{id}")
-    @ApiOperation(value = "Delete Operation",response = Boolean.class)
+    @ApiOperation(value = "Delete Operation", response = Boolean.class)
     public ResponseEntity<Boolean> delete(@PathVariable(value = "id", required = true) Long id) {
         return ResponseEntity.ok(issueServiceImpl.delete(id));
 
     }
+
     @GetMapping("/statuses")
     @ApiOperation(value = "Get All Issue Statuses Operation", response = String.class, responseContainer = "List")
     public ResponseEntity<List<IssueStatus>> getAll() {

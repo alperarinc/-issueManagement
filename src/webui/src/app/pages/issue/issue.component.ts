@@ -16,6 +16,7 @@ export class IssueComponent implements OnInit {
   rows = [];
   projectOptions = [];
 
+
   issueForm: FormGroup;
 
   constructor(private issueService: IssueService,

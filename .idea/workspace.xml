@@ -5,7 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6023bc58-c272-4b8b-aea7-6b356d4f489b" name="Changes" comment="Bug Fixed">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.default_data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_2_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/IssueDetailDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/IssueUpdateDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/RegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/TokenResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/security/JwtTokenUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.ts" afterDir="false" />
@@ -28,6 +43,10 @@
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.component.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.module.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue-detail/issue-detail.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue-detail/issue-detail.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue-detail/issue-detail.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue-detail/issue-detail.component.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue.component.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue.component.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/issue/issue.component.ts" afterDir="false" />
@@ -59,14 +78,17 @@
       <change afterPath="$PROJECT_DIR$/src/webui/src/assets/i18n/tr.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/issuesManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/issuesManagement.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/IssueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/IssueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/ProjectDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/ProjectDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/ProjectRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/ProjectServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Project.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/IssueDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/IssueDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/IssueHistroyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/IssueHistoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueHistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueHistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueHistoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/angular.json" afterDir="false" />
@@ -85,8 +107,14 @@
       <change beforePath="$PROJECT_DIR$/src/webui/src/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/ProjectDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/ProjectDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/ProjectServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/ProjectServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/IssuesManagementApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/IssueDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/IssueDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/IssueHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/IssueHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/IssueHistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueHistoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/issuesManagement/SpringBootTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +195,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.issuesManagement.dto" />
       <recent name="advice" />
       <recent name="com.issuesManagement.Config" />
       <recent name="com.issuesManagement.config" />
@@ -180,6 +209,7 @@
       <recent name="D:\gitup-dev\ıssueManagement" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\gitup-dev\ıssueManagement\src\main\resources\data" />
       <recent name="D:\gitup-dev\ıssueManagement\src\webui\src\app" />
       <recent name="D:\gitup-dev\ıssueManagement\src\webui\issue-management\src\app\pages\issue" />
     </key>
@@ -276,7 +306,10 @@
       <workItem from="1653127342201" duration="928000" />
       <workItem from="1653212757284" duration="2000" />
       <workItem from="1653240034764" duration="10887000" />
-      <workItem from="1653330678198" duration="8656000" />
+      <workItem from="1653330678198" duration="11577000" />
+      <workItem from="1653343381496" duration="1558000" />
+      <workItem from="1653677995869" duration="182000" />
+      <workItem from="1653813818487" duration="13136000" />
     </task>
     <task id="LOCAL-00001" summary="Bug Fixed">
       <created>1650047937735</created>
@@ -328,7 +361,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/webui/src/app/pages/project/project.component.html</url>
           <line>34</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
