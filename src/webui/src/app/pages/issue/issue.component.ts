@@ -37,7 +37,7 @@ export class IssueComponent implements OnInit {
   }
 
   private loadProjects() {
-    this.projectService.getAll().subscribe(response => {
+    this.projectService.getAll(this.page).subscribe(response => {
       this.projectOptions = response;
     });
   }

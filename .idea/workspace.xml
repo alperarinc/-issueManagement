@@ -5,22 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6023bc58-c272-4b8b-aea7-6b356d4f489b" name="Changes" comment="Bug Fixed">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/IssueDetailDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/IssueUpdateDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/RegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/TokenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/security/JwtAuthenticationEntryPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/security/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/_layout/app-layout/app-layout.component.ts" afterDir="false" />
@@ -37,6 +21,10 @@
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/app.routing.module.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/common/page.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/common/project.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/login/login.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/login/login.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/login/login.component.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.component.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.component.scss" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/dashboard/dashboard.component.spec.ts" afterDir="false" />
@@ -58,6 +46,14 @@
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/project/project.component.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/project/project.module.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/pages/project/project.routing.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/register/register.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/register/register.component.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/register/register.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/register/register.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/security/auth.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/security/authentication.interceptor.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/security/authentication.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/webui/src/app/security/jwt.interceptor.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/api.service.spec.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/api.service.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/app/services/shared/issue.history.service.ts" afterDir="false" />
@@ -78,17 +74,11 @@
       <change afterPath="$PROJECT_DIR$/src/webui/src/assets/i18n/tr.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/webui/src/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/issuesManagement.iml" beforeDir="false" afterPath="$PROJECT_DIR$/issuesManagement.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/IssueController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/IssueController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/IssueDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/dto/IssueDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/api/ProjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/IssueHistroyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/IssueHistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueHistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/IssueHistoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueHistoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueHistoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/IssueServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/issuesManagement/security/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/issuesManagement/security/JwtTokenUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/default_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/default_data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/angular.json" afterDir="false" />
@@ -107,14 +97,10 @@
       <change beforePath="$PROJECT_DIR$/src/webui/src/styles.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/webui/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/webui/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/IssuesManagementApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/IssueDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/dto/IssueDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/IssueHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/IssueHistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/IssueHistoryService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueHistoryServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/issuesManagement/service/impl/IssueServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/issuesManagement/SpringBootTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +120,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src/webui" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="JpbToolWindowState">
@@ -309,7 +295,9 @@
       <workItem from="1653330678198" duration="11577000" />
       <workItem from="1653343381496" duration="1558000" />
       <workItem from="1653677995869" duration="182000" />
-      <workItem from="1653813818487" duration="13136000" />
+      <workItem from="1653813818487" duration="13538000" />
+      <workItem from="1653930920010" duration="6800000" />
+      <workItem from="1653938116676" duration="5437000" />
     </task>
     <task id="LOCAL-00001" summary="Bug Fixed">
       <created>1650047937735</created>
@@ -354,16 +342,5 @@
     <MESSAGE value="Spring Boot Entity" />
     <MESSAGE value="Bug Fixed" />
     <option name="LAST_COMMIT_MESSAGE" value="Bug Fixed" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/webui/src/app/pages/project/project.component.html</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

@@ -31,7 +31,7 @@ public class ProjectController {
     //insert into project(id,project_name,project_code) values (60,'Test','T6060')
 
     @GetMapping("/pagination")
-    @ApiOperation(value = "Get By Id Operation",response = ProjectDto.class)
+    @ApiOperation(value = "Get By Pagination Operation",response = ProjectDto.class)
     public ResponseEntity<TPage<ProjectDto>> getAllByPagination(Pageable pageable) {
         TPage<ProjectDto> data  = projectServiceImpl.getAllPageable(pageable);
         return ResponseEntity.ok(data);
